@@ -2,4 +2,4 @@
 Copy text and send message   
    
 # Concept   
-<img src="./img/concept.png" width="100%" height="100%">
+<img src="./img/concept.png" width="50%" height="50%">
