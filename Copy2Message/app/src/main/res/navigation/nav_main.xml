@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_main"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.greimul.copy2message.MainFragment"
+        android:label="Home" />
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.greimul.copy2message.SettingFragment"
+        android:label="Setting" />
+</navigation>
