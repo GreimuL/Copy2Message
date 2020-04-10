@@ -3,4 +3,17 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Switch
+        android:id="@+id/switch_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Service" />
+
+    <Switch
+        android:id="@+id/switch_kakaotalk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KakaoTalk" />
+
 </LinearLayout>

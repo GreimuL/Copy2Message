@@ -4,8 +4,10 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -36,8 +38,16 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onBackPressed() {
+        if(drawerlayout_main.isDrawerOpen(Gravity.LEFT))
+            drawerlayout_main.closeDrawer(Gravity.LEFT)
+        else
+            super.onBackPressed()
+    }
+
     override fun onDestroy() {
         super.onDestroy()
+        savePref(this)
         Session.getCurrentSession().removeCallback(sessionCallback)
     }
 
@@ -59,7 +69,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar_main)
         //supportActionBar?.setDisplayHomeAsUpEnabled(true)
         //supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_menu_48px)
-
+        loadPref(this)
         Session.getCurrentSession().addCallback(sessionCallback)
 
         val navigationController = findNavController(R.id.fragment_nav_host)

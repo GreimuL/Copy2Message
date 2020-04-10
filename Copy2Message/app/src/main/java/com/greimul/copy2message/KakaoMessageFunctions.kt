@@ -15,19 +15,19 @@ fun makeTextMessage(text:String):TextTemplate{
 fun kakaoSendText(text:String,context:Context){
     KakaoTalkService.getInstance().requestSendMemo(object: TalkResponseCallback<Boolean>() {
         override fun onNotKakaoTalkUser() {
-            Toast.makeText(context,"Not KakaoTalk User",Toast.LENGTH_SHORT)
+            Toast.makeText(context,"Not KakaoTalk User",Toast.LENGTH_SHORT).show()
         }
 
         override fun onSessionClosed(errorResult: ErrorResult?) {
-            Toast.makeText(context,"Session Closed",Toast.LENGTH_SHORT)
+            Toast.makeText(context,"Session Closed",Toast.LENGTH_SHORT).show()
         }
 
         override fun onFailure(errorResult: ErrorResult?) {
-            Toast.makeText(context,"Send Failed",Toast.LENGTH_SHORT)
+            Toast.makeText(context,"Send Failed",Toast.LENGTH_SHORT).show()
         }
 
         override fun onSuccess(result: Boolean?) {
-            Toast.makeText(context,"Send Success",Toast.LENGTH_SHORT)
+            Toast.makeText(context,"Send Success",Toast.LENGTH_SHORT).show()
         }
     }, makeTextMessage(text))
 }
