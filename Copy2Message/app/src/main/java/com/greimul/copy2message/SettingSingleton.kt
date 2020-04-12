@@ -3,7 +3,7 @@ package com.greimul.copy2message
 object SettingSingleton{
     var settingList:HashMap<String,Boolean> =
         hashMapOf(
-            "isServiceStart" to false,
+            "isServiceStart" to true,
             "isKakaoTalkServiceStart" to false
         )
 

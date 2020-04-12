@@ -1,5 +1,6 @@
 package com.greimul.copy2message
 
+import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

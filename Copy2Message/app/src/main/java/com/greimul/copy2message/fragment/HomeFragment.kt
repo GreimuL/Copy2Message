@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.greimul.copy2message.R
 import com.greimul.copy2message.adapter.MainAdapter
 import com.greimul.copy2message.db.History
+import com.greimul.copy2message.kakaoSendText
 import com.greimul.copy2message.viewmodel.HistoryViewModel
 import kotlinx.android.synthetic.main.fragment_main.view.*
 import java.util.*

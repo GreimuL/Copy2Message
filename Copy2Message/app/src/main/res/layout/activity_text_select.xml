@@ -3,16 +3,9 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.kakao.usermgmt.LoginButton
+    <TextView
+        android:id="@+id/textview_test"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </com.kakao.usermgmt.LoginButton>
-
-    <Button
-        android:id="@+id/button_logout"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logout" />
-
+        android:text="TextView" />
 </LinearLayout>

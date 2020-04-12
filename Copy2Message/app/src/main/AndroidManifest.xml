@@ -17,6 +17,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".TextSelectActivity"
+            android:label="ToMessage">
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="4da8dbdeb62040c39b3d60fff1a6d0f5"/>
